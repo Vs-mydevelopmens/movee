@@ -177,6 +177,29 @@ if ($("#map").length > 0) {
 }
 
 // ==========================================
+// <СКРИПТ СКРЫТЬ, ПОКАЗАТЬ ОБЬЕКТЫ>
+// ==========================================
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
+
+button.onclick = function () {
+
+    if (content.className == "open") {
+        //shrink the box
+        content.className = "";
+        button.innerHTML = "Все цены";
+    } else {
+        //expand the box
+        content.className = "open";
+        button.innerHTML = "Спрятать";
+    }
+
+};
+// ==========================================
+// </СКРИПТ СКРЫТЬ, ПОКАЗАТЬ ОБЬЕКТЫ>
+// ==========================================
+
+// ==========================================
 // <ВЫДЕЛЕНИЕ АКТИВНОГО МЕНЮ>
 // ==========================================
 $('a').click(function () {
