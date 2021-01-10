@@ -603,6 +603,7 @@ body.lock {
 .price__show {
   margin: 20px 0px 0px 0px;
   text-align: center;
+  display: none;
 }
 
 .price__show-more {
@@ -1456,6 +1457,16 @@ textarea.input {
   }
 }
 
+@media (max-width: 520px) {
+  .price__show {
+    display: block;
+  }
+
+  .price-disc {
+    display: none;
+  }
+}
+
 @media (max-width: 400px) {
   .tabs__img {
     width: 290px;
@@ -1565,6 +1576,14 @@ select .select-title .select-title__arrow{background:url("../img/icons/select-ar
 }
 
  @media (max-width: 600px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 520px){
 
 @supports (-webkit-appearance:none){
 
